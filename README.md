@@ -1,5 +1,5 @@
 📱 WhatsApp UI Clone
-A modern WhatsApp UI clone built using Android (Java/Kotlin), replicating the design and basic functionality of the WhatsApp messaging app.
+A modern WhatsApp UI clone built using Android (Java), replicating the design and basic functionality of the WhatsApp messaging app.
 
 🚀 Features
 ✅ Home Screen – Displays a tabbed layout with Chats, Status, and Calls.
@@ -7,7 +7,6 @@ A modern WhatsApp UI clone built using Android (Java/Kotlin), replicating the de
 ✅ Status Screen – Displays user status updates with circular progress indicators.
 ✅ Calls Screen – Lists recent calls with call icons.
 ✅ Floating Action Button (FAB) – Quick access to start new chats.
-✅ Dark Mode Support – Adapts UI based on system theme.
 ✅ Material UI – Uses modern Material Design components.
 
 
@@ -18,9 +17,6 @@ UI Components: XML, Material Design Components
 
 Navigation: ViewPager2, TabLayout, Bottom Navigation
 
-State Management: LiveData, ViewModel
-
-Database (Optional): Room/SQLite
 
 📥 Installation
 Clone this repository:
