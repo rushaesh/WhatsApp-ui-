@@ -24,7 +24,7 @@ Clone this repository:
 sh
 Copy
 Edit
-git clone https://github.com/yourusername/whatsapp-ui-clone.git
+git clone (https://github.com/rushaesh/WhatsApp-ui-)
 Open in Android Studio and sync Gradle.
 
 Run the app on an emulator or physical device.
