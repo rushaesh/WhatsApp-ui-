@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Chat"
+        android:icon="@drawable/svg_471688"
+        android:title="Chat"
+        android:iconTint="#004d40" />
+
+    <item
+        android:id="@+id/Updates"
+        android:icon="@drawable/running_svgrepo_com"
+        android:title="Updates"
+        android:iconTint="#004d40"/>
+
+
+    <item
+        android:id="@+id/Communities"
+        android:icon="@drawable/team_3_svgrepo_com"
+        android:title="Cummunities"
+        android:iconTint="#004d40"/>
+
+
+    <item
+        android:id="@+id/Calls"
+        android:icon="@drawable/phone_call_icon_"
+        android:title="Calls"
+        android:iconTint="#004d40"/>
+
+</menu>

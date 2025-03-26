@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".activity.status_privacy">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="15dp"
+            android:onClick="backinstatus_privacy"
+            android:src="@drawable/baseline_arrow_back_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/robotoregular"
+            android:text="Status privacy"
+            android:layout_gravity="center"
+            android:id="@+id/last_seen_"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e7e8e8" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Who can see my status updates"
+                    android:fontFamily="@font/robotoregular"
+                    android:textSize="16sp"
+                    android:textColor="@color/gray"
+                    android:paddingBottom="14sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <RadioGroup
+                            android:id="@+id/last_seen_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/radioMyContacts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="My contacts"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:checked="true"/>
+
+                            <!-- Radio Button: My contacts except -->
+
+
+                            <RadioButton
+                                android:id="@+id/radioMyContactsExcept"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:text="My contacts except..."
+                                android:layout_weight="1"/>
+
+
+                            <!-- Radio Button: Only share with -->
+
+
+                            <RadioButton
+                                android:textColor="@color/black"
+                                android:id="@+id/radioOnlyShareWith"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Only share with..."
+                                android:layout_weight="1"/>
+
+
+                        </RadioGroup>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textExcludedContacts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6 excluded"
+                            android:visibility="invisible"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#008577"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:id="@+id/textIncludedContacts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 included"
+                            android:layout_marginTop="10dp"
+                            android:visibility="invisible"
+                            android:textColor="#008577"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:id="@+id/textExcludedContacts_"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6 excluded"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/green"
+                            android:textSize="14sp"/>
+                        <TextView
+                            android:id="@+id/textIncludedContacts__"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 included"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:textColor="@color/green"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Radio Button: My contacts -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e7e8e8" />
+                <!-- Share my status updates -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Share my status updates across my accounts"
+                    android:textColor="@color/gray"
+                    android:fontFamily="@font/robotoregular"
+                    android:paddingBottom="8dp"/>
+
+                <!-- Facebook Account Link -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/open_facebook"
+                        android:layout_gravity="center"
+                        android:tint="@color/gray"
+                        android:layout_marginRight="15dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/textFacebookLink"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Facebook"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tap to add your account"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Information text -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/gray"
+                    android:text="Changes to your privacy settings won't affect status updates that you've sent already"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/banner_ad_container"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

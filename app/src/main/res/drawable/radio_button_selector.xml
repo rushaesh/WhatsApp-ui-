@@ -1,0 +1,7 @@
+<!-- res/drawable/radio_button_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Checked state -->
+    <item android:state_checked="true" android:color="@color/green" />
+    <!-- Unchecked state -->
+    <item android:state_checked="false" android:color="@color/gray" />
+</selector>

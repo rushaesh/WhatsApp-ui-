@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-feature android:name="android.hardware.microphone" />
+    <uses-feature android:name="android.hardware.camera2" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Whatsapp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:exported="true" />
+        <activity
+            android:name=".firstdrawe.MainActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".activity.create_avtar"
+            android:exported="false" />
+        <activity
+            android:name=".activity.privacy_safty"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Communities"
+            android:exported="false" />
+        <activity
+            android:name=".activity.voicecalls"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Chats_"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Connect_with_Businesses"
+            android:exported="false" />
+        <activity
+            android:name=".activity.getStarted"
+            android:exported="false" />
+        <activity
+            android:name=".activity.halecenter"
+            android:exported="false" />
+        <activity
+            android:name=".activity.defulttimer"
+            android:exported="false" />
+        <activity
+            android:name=".activity.grops"
+            android:exported="false" />
+        <activity
+            android:name=".activity.live_location"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Chat_lock"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Advanced"
+            android:exported="false" />
+        <activity
+            android:name=".activity.status_privacy"
+            android:exported="false" />
+        <activity
+            android:name=".activity.lastseen"
+            android:exported="false" />
+        <activity
+            android:name=".activity.change_number"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Two_step_verification"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Email_address"
+            android:exported="false" />
+        <activity
+            android:name=".activity.passkay"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Security_notifications"
+            android:exported="false" />
+        <activity
+            android:name=".activity.chats"
+            android:exported="false" />
+        <activity
+            android:name=".activity.favourites"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Help"
+            android:exported="false" />
+        <activity
+            android:name=".Help"
+            android:exported="false" />
+        <activity
+            android:name=".activity.App_language"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Storage"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Notifications"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Avatar"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Privacy"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Account"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Update"
+            android:exported="false" />
+        <activity
+            android:name=".star"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WhatsappCameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RunTimePermission"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PhotoVideoRedirectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".activity.qr_code"
+            android:exported="false" />
+        <activity
+            android:name=".activity.cratebroadcast"
+            android:exported="false" />
+        <activity
+            android:name=".activity.crategrop"
+            android:exported="false" />
+        <activity
+            android:name=".activity.contact"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Starredmessages"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Settings"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Payments"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Linkeddevices"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Newbroadcast"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Newgroup"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <activity
+            android:name=".activity.camera"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity3"
+            android:exported="true" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/capturedImage"
+            android:layout_width="wrap_content"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/donate"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="WhatsApp"
+                        android:textColor="#5AC35E"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/qrcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/qrcode_scan_svgrepo_com" />
+
+                    <ImageView
+                        android:id="@+id/camera1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/photo_camera_svgrepo_com__1_" />
+
+                    <ImageView
+                        android:id="@+id/popup_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/three_dots_vertical_svgrepo_com" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/redius30"
+                    android:backgroundTint="#F0F0F0"
+                    android:drawableLeft="@drawable/search_svgrepo"
+                    android:drawablePadding="13dp"
+                    android:fontFamily="@font/robotomedium"
+                    android:hint="Search"
+                    android:inputType="text"
+                    android:paddingVertical="13dp"
+                    android:paddingStart="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#858484" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/idCourseRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/redius15"
+                android:outlineProvider="bounds"
+                android:padding="10dp"
+                android:src="@drawable/meta" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="15dp"
+                android:layout_marginStart="25dp"
+                android:background="@drawable/redius30green"
+                android:outlineProvider="bounds"
+                android:padding="17dp"
+                android:id="@+id/contact"
+                android:src="@drawable/message_add_svgrepo_com"
+                android:tint="@color/white" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

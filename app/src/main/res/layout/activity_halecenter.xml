@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.halecenter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            android:orientation="horizontal"
+            android:padding="@dimen/_7sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="helpcenter"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/robotoregular"
+                android:text="Help centre"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingVertical="@dimen/_5sdp"
+                android:src="@drawable/three_dots_vertical_svgrepo_com_" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e7e8e8" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                 
+                    android:background="#EBEBEB"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/whatsapp_svgrepo_com"
+                        android:layout_marginVertical="@dimen/_20sdp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotomedium"
+                        android:text="How can we help?"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginHorizontal="@dimen/_15sdp"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="@dimen/_16ssp" />
+                    <EditText
+                        android:id="@+id/edit3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@drawable/redius30"
+                        android:backgroundTint="@color/white"
+                        android:drawableLeft="@drawable/search_svgrepo"
+                        android:drawablePadding="13dp"
+                        android:fontFamily="@font/robotomedium"
+                        android:hint="Search help center"
+                        android:inputType="text"
+                        android:paddingVertical="12dp"
+                        android:paddingStart="16dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#A4A2A2" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_15sdp"
+                        android:background="@color/white"
+                        android:onClick="privacy__"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Help topics"
+                            android:textColor="@color/gray"
+                            android:fontFamily="@font/robotoregular"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:textSize="@dimen/_12ssp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="getStarted"
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/waving_flag"
+                                android:tint="@color/green"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Get Started"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="Chats"
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/whatsapp_new_chat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:fontFamily="@font/robotoregular"
+                                android:text="Chats"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="Connect_with_Businesses"
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/office_business_work_workplace_home_company_2_svgrepo_com"
+                                android:tint="@color/green"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Connect with Businesses"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="calls"
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/phone_call_icon"
+                                android:tint="@color/green"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Voice and Video Calls"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="Communities"
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/team_3_svgrepo_com"
+                                android:tint="@color/green"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Communities"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/running_svgrepo_com_"
+                                android:tint="@color/green"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Channels"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="privacy_"
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/lock_svgrepo_com__1_"
+                                android:tint="@color/green"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Privacy, Safety, and Security
+"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/profile_user_svgrepo_com"
+                                android:tint="@color/green"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Accounts and Account Bans"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/iconmonstr_credit_card_thin"
+                                android:tint="@color/green"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Payments "
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/whatsapp_business_svgrepo_com"
+                                android:tint="@color/green"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="WhatsApp for Business "
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_15sdp"
+                        android:layout_marginVertical="@dimen/_10sdp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Popular articles "
+                            android:textColor="@color/gray"
+                            android:fontFamily="@font/robotoregular"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:textSize="@dimen/_12ssp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/page" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/page" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="About unofficial apps"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/page" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Get Started"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:background="@color/white"
+                            android:layout_marginVertical="@dimen/_10sdp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/page" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="About disappearing messages"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/robotoregular"
+                                android:layout_marginHorizontal="@dimen/_15sdp"
+                                android:textSize="@dimen/_12ssp" />
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_15sdp"
+                            android:text="Show more"
+                            android:background="@color/white"
+                            android:layout_marginLeft="@dimen/_30sdp"
+                            android:textColor="@color/green"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_60sdp"/>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="15dp"
+                    android:layout_marginStart="25dp"
+                    android:padding="@dimen/_15sdp"
+                    android:background="@drawable/redius30green"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:outlineProvider="bounds"
+                        android:id="@+id/contact"
+                        android:src="@drawable/question_mark_inside_square_svgrepo_com"
+                        android:tint="@color/white" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact us"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="@dimen/_14ssp" />
+                </LinearLayout>
+                <FrameLayout
+                    android:id="@+id/banner_ad_container"
+                    android:layout_width="match_parent"
+                    android:visibility="visible"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

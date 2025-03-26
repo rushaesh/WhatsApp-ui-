@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/java" android:title="Status privacy"/>
+    <item android:id="@+id/kotlin" android:title="Create channel"/>
+    <item android:id="@+id/android" android:title="Setting"/>
+</menu>
