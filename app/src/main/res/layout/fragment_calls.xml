@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,7 +46,7 @@
             android:layout_marginStart="25dp"
             android:id="@+id/call"
             android:src="@drawable/search_find_magnifier_zoom_view_svgrepo_com"
-            android:tint="@color/black" />
+            app:tint="@color/black" />
 
         <ImageView
             android:id="@+id/pop4"
@@ -52,15 +55,18 @@
             android:layout_marginStart="25dp"
             android:src="@drawable/three_dots_vertical_svgrepo_com" />
     </LinearLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="none"
             android:layout_weight="1"
             android:fillViewport="true">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -116,11 +122,13 @@
                     android:elevation="10dp" />
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:orientation="vertical">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -128,10 +136,10 @@
                 android:src="@drawable/phone_plus"
                 android:layout_gravity="bottom|end"
                 android:layout_margin="15dp"
-                android:tint="@color/white"
                 android:outlineProvider="bounds"
                 android:padding="17dp"
-                android:background="@drawable/redius30green"/>
+                android:background="@drawable/redius30green"
+                app:tint="@color/white" />
         </LinearLayout>
     </FrameLayout>
 

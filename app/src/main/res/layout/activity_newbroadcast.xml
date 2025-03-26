@@ -47,7 +47,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="25dp"
             android:src="@drawable/search_find_magnifier_zoom_view_svgrepo_com"
-            android:tint="@color/black" />
+            app:tint="@color/black" />
 
     </LinearLayout>
     <View
@@ -106,9 +106,8 @@
                     android:outlineProvider="bounds"
                     android:padding="17dp"
                     android:id="@+id/contact"
-                    android:onClick="broadcast"
                     android:src="@drawable/baseline_check_24"
-                    android:tint="@color/white" />
+                    app:tint="@color/white" />
 
             </LinearLayout>
             <FrameLayout

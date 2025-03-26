@@ -42,7 +42,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="25dp"
                 android:src="@drawable/search_find_magnifier_zoom_view_svgrepo_com"
-                android:tint="@color/black" />
+                app:tint="@color/black" />
 
             <ImageView
                 android:id="@+id/pop2"
@@ -229,10 +229,10 @@
                     android:src="@drawable/photo_camera_svgrepo_com__1_"
                     android:layout_gravity="bottom|end"
                     android:layout_margin="15dp"
-                    android:tint="@color/white"
                     android:outlineProvider="bounds"
                     android:padding="17dp"
-                    android:background="@drawable/redius30green"/>
+                    android:background="@drawable/redius30green"
+                    app:tint="@color/white" />
             </LinearLayout>
         </FrameLayout>
     </LinearLayout>

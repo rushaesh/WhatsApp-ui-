@@ -17,9 +17,9 @@
             android:layout_width="26dp"
             android:layout_height="26dp"
             android:src="@drawable/bo1"
-            android:tint="#5F5E5E"
             android:layout_gravity="center"
-            app:civ_border_color="#FF000000" />
+            app:civ_border_color="#FF000000"
+            app:tint="#5F5E5E" />
         <TextView
             android:id="@+id/mess1"
             android:layout_width="wrap_content"

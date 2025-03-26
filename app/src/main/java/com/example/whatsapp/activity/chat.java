@@ -27,8 +27,8 @@ public class chat extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.img1);
         Bundle bundle = getIntent().getExtras();
         adManager = AdManager.getInstance(this);
-        FrameLayout bannerAdContainer = findViewById(R.id.banner_ad_container);
-        adManager.loadBannerAd(bannerAdContainer);
+//        FrameLayout bannerAdContainer = findViewById(R.id.banner_ad_container);
+//        adManager.loadBannerAd(bannerAdContainer);
 
         //        Intent intent = getIntent();
         //        String s1 = getIntent().getStringExtra("message1");

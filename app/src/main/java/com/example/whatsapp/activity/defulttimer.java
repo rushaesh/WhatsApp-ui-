@@ -1,5 +1,6 @@
 package com.example.whatsapp.activity;
 
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -23,6 +24,7 @@ public class defulttimer extends AppCompatActivity {
 
     private AdManager adManager;
 
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

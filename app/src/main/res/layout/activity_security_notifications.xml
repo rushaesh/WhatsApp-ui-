@@ -109,7 +109,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:src="@drawable/svg_471688_"
-                        android:tint="#21C063" />
+                        app:tint="#21C063" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -134,8 +134,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:src="@drawable/phone_call_icon__"
-                        android:tint="#21C063"
-                        app:civ_border_color="#FF000000" />
+                        app:civ_border_color="#FF000000"
+                        app:tint="#21C063" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -159,8 +159,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:src="@drawable/pin"
-                        android:tint="#21C063"
-                        app:civ_border_color="#FF000000" />
+                        app:civ_border_color="#FF000000"
+                        app:tint="#21C063" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -185,8 +185,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:src="@drawable/location_point_svgrepo_com__1_"
-                        android:tint="#21C063"
-                        app:civ_border_color="#FF000000" />
+                        app:civ_border_color="#FF000000"
+                        app:tint="#21C063" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -210,8 +210,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:src="@drawable/running_svgrepo_com"
-                        android:tint="#21C063"
-                        app:civ_border_color="#FF000000" />
+                        app:civ_border_color="#FF000000"
+                        app:tint="#21C063" />
 
                     <TextView
                         android:layout_width="wrap_content"

@@ -123,33 +123,6 @@
             android:name=".activity.Help"
             android:exported="false" />
         <activity
-            android:name=".Help"
-            android:exported="false" />
-        <activity
-            android:name=".activity.App_language"
-            android:exported="false" />
-        <activity
-            android:name=".activity.Storage"
-            android:exported="false" />
-        <activity
-            android:name=".activity.Notifications"
-            android:exported="false" />
-        <activity
-            android:name=".activity.Avatar"
-            android:exported="false" />
-        <activity
-            android:name=".activity.Privacy"
-            android:exported="false" />
-        <activity
-            android:name=".activity.Account"
-            android:exported="false" />
-        <activity
-            android:name=".activity.Update"
-            android:exported="false" />
-        <activity
-            android:name=".star"
-            android:exported="false" />
-        <activity
             android:name=".activity.WhatsappCameraActivity"
             android:exported="false" />
         <activity

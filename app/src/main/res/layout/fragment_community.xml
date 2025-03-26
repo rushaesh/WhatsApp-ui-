@@ -77,7 +77,6 @@
                         android:layout_margin="10dp"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:onClick="co"
                         android:id="@+id/btnContactDev"
                         android:orientation="horizontal">
                         <!--                        android:onClick="Communities"-->
@@ -95,7 +94,7 @@
                                 android:layout_gravity="center"
                                 android:padding="10dp"
                                 android:src="@drawable/team_3_svgrepo_com"
-                                android:tint="@color/white"/>
+                                app:tint="@color/white" />
                         </androidx.cardview.widget.CardView>
 
                         <TextView
@@ -137,7 +136,7 @@
                                 android:layout_gravity="center"
                                 android:padding="10dp"
                                 android:src="@drawable/team_3_svgrepo_com"
-                                android:tint="@color/white"/>
+                                app:tint="@color/white" />
                         </androidx.cardview.widget.CardView>
 
                         <TextView
@@ -242,7 +241,7 @@
                                 android:layout_height="45dp"
 
                                 android:src="@drawable/customers_svgrepo_com"
-                                android:tint="@color/white"/>
+                                app:tint="@color/white" />
                         </androidx.cardview.widget.CardView>
 
                         <LinearLayout
@@ -338,8 +337,8 @@
                                 android:layout_height="50dp"
                                 android:layout_gravity="center"
                                 android:padding="10dp"
-                                android:tint="@color/white"
-                                android:src="@drawable/team_3_svgrepo_com" />
+                                android:src="@drawable/team_3_svgrepo_com"
+                                app:tint="@color/white" />
                         </androidx.cardview.widget.CardView>
 
                         <TextView
@@ -540,8 +539,8 @@
                                 android:layout_height="50dp"
                                 android:layout_gravity="center"
                                 android:padding="10dp"
-                                android:tint="@color/white"
-                                android:src="@drawable/team_3_svgrepo_com" />
+                                android:src="@drawable/team_3_svgrepo_com"
+                                app:tint="@color/white" />
                         </androidx.cardview.widget.CardView>
 
                         <TextView
@@ -643,8 +642,8 @@
                             <ImageView
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
-                                android:tint="@color/white"
-                                android:src="@drawable/customers_svgrepo_com" />
+                                android:src="@drawable/customers_svgrepo_com"
+                                app:tint="@color/white" />
                         </androidx.cardview.widget.CardView>
 
                         <LinearLayout
