@@ -1,5 +1,5 @@
 ## 📥 Download APK
-[![Download APK](https://github.com/rushaesh/WhatsApp-ui-/releases/tag/v1.0.0)
+[![Download APK]([https://github.com/rushaesh/WhatsApp-ui-/releases/tag/v1.0.0](https://github.com/rushaesh/WhatsApp-ui-/releases/download/v1.0.0/app-debug.apk))
 
 📱 WhatsApp UI Clone
 A modern WhatsApp UI clone built using Android (Java), replicating the design and basic functionality of the WhatsApp messaging app.
